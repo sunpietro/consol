@@ -1,0 +1,49 @@
+@import "tailwindcss";
+@import "@ory/elements-react/theme/styles.css";
+
+:root {
+  --background: #ffffff;
+  --foreground: #f8fafc;
+  --accent: #e2e8f0;
+  --body-primary: #0f172a;
+  --body-secondary: #64748b;
+  --text-large: 1.25rem;
+  --text-regular: 1rem;
+  --text-small: 0.875rem;
+  --text-xsmall: 0.75rem;
+  --link: #4f46e5;
+  --link-hover: #3730a3;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-body-primary: var(--body-primary);
+  --color-body-secondary: var(--body-secondary);
+  --color-accent: var(--accent);
+  --color-link: var(--link);
+  --color-link-hover: var(--link-hover);
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-jetbrains-mono);
+  --text-large: var(--text-large);
+  --text-regular: var(--text-regular);
+  --text-small: var(--text-small);
+  --text-xsmall: var(--text-xsmall);
+}
+
+body {
+  @apply bg-background text-body-primary leading-normal;
+  font-family: var(--font-inter), sans-serif;
+}
+
+a {
+  @apply text-link hover:underline hover:text-link-hover focus:text-link-hover;
+}
+
+h1 {
+  @apply text-3xl font-semibold;
+}
+
+h2 {
+  @apply font-semibold;
+}
