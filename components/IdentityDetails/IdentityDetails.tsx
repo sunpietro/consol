@@ -10,7 +10,7 @@ export const IdentityDetails = ({ id }: { id: string }) => {
   const { data: identity } = useIdentity(id);
   const { data: sessions } = useIdentitySessions(id);
 
-  if (!identity) {
+  if (!identity || !sessions) {
     return <Container>Loading...</Container>;
   }
 
