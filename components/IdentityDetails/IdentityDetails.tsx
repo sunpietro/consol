@@ -14,8 +14,6 @@ export const IdentityDetails = ({ id }: { id: string }) => {
     return <Container>Loading...</Container>;
   }
 
-  console.log({ identity, sessions });
-
   return (
     <>
       <PageHeader>

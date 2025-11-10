@@ -11,8 +11,6 @@ export const TopNav = async () => {
     phone: string;
   };
 
-  console.log({ traits, session });
-
   return (
     <header className="py-6">
       <nav className="flex gap-4">
